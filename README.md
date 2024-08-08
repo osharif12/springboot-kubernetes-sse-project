@@ -1,4 +1,6 @@
 # Springboot-Kubernetes-SSE-Project
+
+## About the Project
 This project has two modules representing two services, one named Broadcaster and the other named ViewBroadcaster.
 Broadcaster will start a serversocket and wait for socket connections on port 8081. For every connection it will
 generate a random number from 1-10, sleep for that random number interval, then send the message to ViewBroadcaster
@@ -15,8 +17,10 @@ These services will be deployed on kubernetes pods with replicas to handle for m
 ## Information about Server Side Events
 SSE's are a tool used for sending real time notifications and updates to web applications. These events are pushed from server to client via HTTP. SSE's are well-suited for scenarios such as a live news feed, a sports game result updates, or a financial dashboard that requires frequent data refresh. 
 
-## Directions to run application
+## Prerequisites to run the application
 - Install minikube, docker, kubectl, and maven
+
+## Directions to run application
 - clone the project into your repository
 - cd into topmost project directory and run 'mvn clean install package' directory (will install jar files inside target directory)
 - start minikube with the following command 'minikube start'
