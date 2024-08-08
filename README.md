@@ -17,7 +17,7 @@ SSE's are a tool used for sending real time notifications and updates to web app
 
 ## Directions to run application
 - Install minikube, docker, kubectl, and maven
-- clone the project into your repository and checkout the branch feature/sharif-project
+- clone the project into your repository
 - cd into topmost project directory and run 'mvn clean install package' directory (will install jar files inside target directory)
 - start minikube with the following command 'minikube start'
 - Run the following command to allow for the building of docker images inside minikube: eval $(minikube docker-env)
